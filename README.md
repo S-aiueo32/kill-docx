@@ -30,5 +30,5 @@ You can set arguments below:
 --save_pages: Whether each page is saved in the directory.
 ```
 
-## :chichen: Reference
+## :chicken: Reference
 1. Zongker, Doug. "Chicken chicken chicken: Chicken chicken." Annals of Improbable Research 12 , no. 5 (2006): 16--21.
