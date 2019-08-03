@@ -49,7 +49,7 @@ def main():
     parser.add_argument('--save_pages', action='store_true', default=False)
     args = parser.parse_args()
 
-	# store args
+    # store args
     input_path = Path(args.input)
     output_path = Path(args.output)
     size = PAPER_SIZE[args.size]
@@ -58,24 +58,24 @@ def main():
     else:
         width, height = Mm(size['long']), Mm(size['short'])
 
-	# instantiation docx
+        # instantiation docx
     doc = Document()
 
-	# set parameters
-	section, *_ = doc.sections  # store 1st section
-	section.bottom_margin = 0
-	section.left_margin = 0
-	section.right_margin = 0
-	section.top_margin = 0
+    # set parameters
+    section, *_ = doc.sections  # store 1st section
+    section.bottom_margin = 0
+    section.left_margin = 0
+    section.right_margin = 0
+    section.top_margin = 0
     section.page_width = width
     section.page_height = height
 
-	# convert and add pages to docx
+    # convert and add pages to docx
     add_pages(doc, input_path, args.save_pages)
 
-	# save
+    # save
     doc.save(output_path)
 
+
 if __name__ == '__main__':
-	main()
-	
+    main()
