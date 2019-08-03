@@ -1,8 +1,8 @@
 # :fu: kill-docx
-> Say NO to MS Word, Say YES to LaTeX.
+> SAY NO TO MS WORD
 
 **[INFO]**
-[This article](https://qiita.com/S-aiueo32/items/02dc7a6ea481d0f234f5) based on [the commit](https://github.com/S-aiueo32/kill-docx/tree/c20baaa8064e3633d9884c40a4b26ed015442f3e), not `master`.
+[This article](https://qiita.com/S-aiueo32/items/02dc7a6ea481d0f234f5) based on [this commit](https://github.com/S-aiueo32/kill-docx/tree/c20baaa8064e3633d9884c40a4b26ed015442f3e), not `master`.
 
 ## Introduction
 These codes convert PDF to PNG and embed them to Word documents, in the other words, kill Microsoft Word.
@@ -17,15 +17,14 @@ Python 3.6
  - pillow
 ```
 
-**[IMPORTANT]**  
-`pdf2image` package requires to install `poppler` which is out of `pip` package managements. So check [here](https://github.com/Belval/pdf2image) out!
+**[IMPORTANT]** `pdf2image` package requires to install `poppler` which is out of `pip`. So check [here](https://github.com/Belval/pdf2image) out!
 
 ## Usage
 Let's kill them! You will see a `docx` file like `./src/chicken.pdf`.
 ```
 python main.py
 ```
-You can set arguments below:
+You can set arguments:
 ```
 --input : PDF file to input.
 --output: Filepath to output docx file.
